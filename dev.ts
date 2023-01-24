@@ -37,6 +37,17 @@ const FOLDERS_IN_FOLDER = [
     },
 ];
 
+const BOOKMARKS_AND_FOLDER = [
+    {
+        href: "https://twitter.com/joaompalmeiro",
+        name: "Twitter",
+    },
+    {
+        name: "Code",
+        children: BOOKMARKS_ONLY,
+    },
+];
+
 const bookmarksOnly = genBookmarkHTML(BOOKMARKS_ONLY);
 console.log(bookmarksOnly);
 writeFileSync("bookmarks_only.html", bookmarksOnly);
@@ -48,3 +59,7 @@ writeFileSync("bookmarks_in_folder.html", bookmarksInFolder);
 const foldersInFolder = genBookmarkHTML(FOLDERS_IN_FOLDER);
 console.log(foldersInFolder);
 writeFileSync("folders_in_folder.html", foldersInFolder);
+
+const bookmarksAndFolder = genBookmarkHTML(BOOKMARKS_AND_FOLDER);
+console.log(bookmarksAndFolder);
+writeFileSync("bookmarks_and_folder.html", bookmarksAndFolder);
