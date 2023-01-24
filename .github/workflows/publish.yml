@@ -6,6 +6,7 @@
 # https://dnlytras.com/blog/using-changesets
 # https://github.com/joaopalmeiro/netscapebff/settings/actions:
 # Workflow permissions > Check Read and write permissions + Check Allow GitHub Actions to create and approve pull requests
+# https://github.com/changesets/changesets/issues/503
 
 name: Publish
 
