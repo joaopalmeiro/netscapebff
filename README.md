@@ -6,6 +6,7 @@ A package to generate HTML bookmark files according to the [Netscape Bookmark fi
 
 - https://github.com/bahamas10/node-netscape-bookmarks
 - https://github.com/Zebradil/nebooman
+- https://github.com/pxlprfct/bookmarked
 - https://github.com/mattpocock/pkg-demo + https://youtu.be/eh89VE3Mk5g
 
 ## Development
@@ -15,13 +16,21 @@ npm install
 ```
 
 ```bash
+npm run dev
+```
+
+```bash
+npm run lint
+```
+
+```bash
 npx changeset
 ```
 
 ## Notes
 
 - https://www.waterfox.net/support/Linux/import-bookmarks-html-file/
-- `npm install -D typescript tsup prettier @feedzai/prettier-config @changesets/cli`
+- `npm install -D typescript tsup prettier @feedzai/prettier-config @changesets/cli ts-node`
 - `npx tsc --init`
 - https://github.com/changesets/changesets/blob/main/docs/intro-to-using-changesets.md
 - `npx changeset init`
