@@ -1,0 +1,33 @@
+# https://github.com/changesets/action#example-workflow
+# https://github.com/mattpocock/pkg-demo/blob/main/.github/workflows/publish.yml
+# https://github.com/actions/setup-node#usage
+# https://github.com/changesets/action/blob/main/src/index.ts#L58
+
+name: Publish
+
+on:
+  push:
+    branches:
+      - "main"
+
+# To ensure that two of these workflows don't run at the same time:
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - run: npm install
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: npm run build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
