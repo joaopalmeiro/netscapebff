@@ -1,5 +1,11 @@
 # netscapebff
 
+## 0.1.2
+
+### Patch Changes
+
+-   69ddd5d: Fix release command.
+
 ## 0.1.1
 
 ### Patch Changes
