@@ -1,5 +1,11 @@
 # netscapebff
 
+## 0.1.3
+
+### Patch Changes
+
+-   84a5183: Change access to public.
+
 ## 0.1.2
 
 ### Patch Changes
