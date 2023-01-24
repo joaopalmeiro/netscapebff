@@ -22,6 +22,11 @@ function getFolderHeader(title: string): string {
     return `<DT><H3>${title}</H3>`;
 }
 
+// Based on:
+// - https://github.com/bahamas10/node-netscape-bookmarks/blob/master/index.js#L35
+// - https://github.com/pxlprfct/bookmarked/blob/main/src/index.ts
+// - https://github.com/pxlprfct/bookmarked/blob/main/src/formatters/html.ts
+// - https://github.com/pxlprfct/bookmarked/blob/main/src/formatters/bookmark.ts
 export function genBookmarkHTML(content: (Bookmark | Folder)[]): string {
     const bookmarks = ["<DL>"];
     return "HERE";
