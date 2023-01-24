@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        // https://www.typescriptlang.org/tsconfig#noUncheckedIndexedAccess
+        "noUncheckedIndexedAccess": true,
+        // https://www.typescriptlang.org/tsconfig#noEmit
+        "noEmit": true
+    }
+}
