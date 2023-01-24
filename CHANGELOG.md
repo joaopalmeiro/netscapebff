@@ -1,5 +1,11 @@
 # netscapebff
 
+## 0.1.1
+
+### Patch Changes
+
+-   e3f14a0: Fix missing npx changeset publish.
+
 ## 0.1.0
 
 ### Minor Changes
