@@ -2,6 +2,7 @@
     "name": "netscapebff",
     "license": "MIT",
     "version": "0.0.0",
+    "description": "A package to generate HTML bookmark files according to the Netscape Bookmark file format.",
     "main": "dist/index.js",
     "module": "dist/index.mjs",
     "types": "dist/index.d.ts",
